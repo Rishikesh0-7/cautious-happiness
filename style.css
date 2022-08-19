@@ -112,7 +112,6 @@
     justify-content: center;
     flex-direction: row;
     margin-top: 2rem;
-    grid-template-rows: repeat(2, minmax(0, 1fr));
     gap: 1rem;
     width: 85%;
 }
@@ -150,3 +149,64 @@
     margin: 1.5rem;
 }
 
+
+
+
+@media only screen and (max-width : 600px){
+    .hero-content{
+        flex-direction: column-reverse;
+        width: 100vw;
+        padding: 10px;
+
+    }
+    .hero-content img{
+        display: none;
+    }
+    .hero-content div h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-content div h2{
+        font-size: 1.25rem;
+    }
+
+    .hero-content div button{
+        width: 40%;
+    }
+
+    .about-me{
+        gap: 0;
+        height: max-content;
+    }
+    .about-me div{
+        padding: 7px;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .about-me div img{
+        width: 100%;
+    }
+
+    .about-me h1{
+        font-size: 2rem;
+    }
+
+    .about-me div h2{
+        font-size: 1.25rem;
+    }
+
+    .skill-sec h1{
+        font-size: 2rem;
+    }
+    .skill-sec{
+        height: max-content;
+        padding-bottom: 1rem;
+    }
+    .skill-sec div{
+        flex-direction: column;
+    }
+    .skill-sec .skill-card{
+        width: 100%;
+    }
+}
